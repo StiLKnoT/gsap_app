@@ -20,7 +20,7 @@ const Contact = () => {
         }, "-=3")
     })
   return (
-    <div>
+    <div className="contact_page">
         <Transition timeline={contact}/>
       <div className="contact-image contact-overlay" ref={contactimg}></div>
       <div className="container-contact" ref={contacth1}>

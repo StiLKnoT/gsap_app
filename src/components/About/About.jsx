@@ -21,7 +21,7 @@ const About = () => {
         }, "-=3")
     })
   return (
-    <div>
+    <div className="about_page">
         <Transition timeline={about}/>
       <div className="about-image about-overlay" ref={aboutimg}></div>
       <div className="container-about" ref={abouth1}>

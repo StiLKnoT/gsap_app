@@ -1,29 +1,74 @@
+@font-face {
+  font-family: "Monument";
+  src: url("../../assets/fonts/monument/MonumentExtended-FreeForPersonalUse/MonumentExtended-Regular.otf");
+}
+
+.home_page {
+  width: 100vw;
+  height: 200vh;
+  background: radial-gradient(rgb(80, 1, 1), black);
+}
+.overflow {
+  overflow: hidden;
+  position: absolute;
+  top: 70%;
+}
+.overflow2 {
+  overflow: hidden;
+  position: absolute;
+  top: 74%;
+}
+.home_page_text {
+  transform: translateY(100%);  
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 25px;
+  padding: 0 10%;
+  text-align: center;
+  width: 100vw;
+  text-shadow: 2px 2px rgb(154, 0, 0);
+}
 .container-home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
 }
-.container-home h1{
-    font-family: 'Monument';
-    color: #fff;
-    font-size: 100px;
-    text-transform: uppercase;
+.container-home h1 {
+  font-family: "Monument";
+  color: #fff;
+  font-size: 100px;
+  text-transform: uppercase;
+  z-index: 2;
 }
-.home-image{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    height: 600px;
-    overflow: hidden;
-    background-color: yellow; 
+.home-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+  background-color: yellow;
 }
-.home-overlay{
-    background: url('../../assets/images/portfolio-4.jpg') 50% 50% no-repeat;
+.home-overlay {
+  background: url("../../assets/images/portfolio-4.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+.home-image_myImg{
+    background: url('../../assets/images/myImg.jpg') 50% 50% no-repeat;
     background-size: cover;
+    opacity: 0;
+    z-index: 1;
+}
+.home_page2{
+    top: 100%;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: red;
 }

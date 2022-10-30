@@ -1,38 +1,68 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Monument';
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Monument";
 }
-body{
-    background-color: #161616;
-    overflow: hidden;
+@font-face {
+  font-family: "Neutral Face";
+  src: url("./assets/fonts/neutral_face/NeutralFace.otf");
 }
-.header{
-    position: absolute;
-    display: flex;
-    height: 150px;
-    width: 100%;
-    z-index: 1000;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 2em;
 }
-.header .logo{
-    margin-left: 30px;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Neutral Face';
+::-webkit-scrollbar-track {
+  background: rgb(230, 230, 230);
+  border-radius: 100vw;
+  /* margin-block: .5em; */
+  margin-left: 10em;
 }
-.header ul{
-    list-style: none;
-    text-align: right;
-    margin-right: 30px;
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(red, blue);
+  border-radius: 100vw;
+  border: 0.1em solid gray;
 }
-.header ul li .link{
-    font-size: 20px;
-    font-family: 'Neutral Face';
-    color: #fff;
-    font-weight: bold;
-    margin-top: 5px;
-    text-decoration: none;
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(blue, red);
+}
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: (red blue) rgb(184, 180, 180);
+    scrollbar-width: 0.5em;
+  }
+}
+
+body {
+  background-color: #161616;
+  overflow-x: hidden;
+}
+.header {
+  position: absolute;
+  display: flex;
+  height: 150px;
+  width: 100%;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.header .logo {
+  margin-left: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Neutral Face";
+}
+.header ul {
+  list-style: none;
+  text-align: right;
+  margin-right: 30px;
+}
+.header ul li .link {
+  font-size: 20px;
+  font-family: "Neutral Face";
+  color: #fff;
+  font-weight: bold;
+  margin-top: 5px;
+  text-decoration: none;
 }
