@@ -2,9 +2,7 @@ import React from 'react';
 import './App.css';
 import { Routes, Route, NavLink} from 'react-router-dom'
 import Rout from './components/Routes/Routes'
-import Home from './components/Home/Home'
-import Contact from './components/Contact/Contact'
-import About from './components/About/About'
+
 function App() {
   return (
     <div className="App">

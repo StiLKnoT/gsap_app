@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from "react";
 import "./About.css";
 import gsap from 'gsap'
-import Transition from "../Transition/Transition";
+import Transition from "../../components/Transition/Transition";
 
 const About = () => {
     const about = gsap.timeline()
@@ -24,6 +24,11 @@ const About = () => {
     <div className="about_page">
         <Transition timeline={about}/>
       <div className="about-image about-overlay" ref={aboutimg}></div>
+      
+      <div className="pick__container">
+        <div class="pic__anima"></div>
+      </div>
+
       <div className="container-about" ref={abouth1}>
         <h1>About Page</h1>
       </div>

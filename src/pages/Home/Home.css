@@ -6,7 +6,7 @@
 .home_page {
   width: 100vw;
   height: 200vh;
-  background: radial-gradient(rgb(80, 1, 1), black);
+  background: radial-gradient(rgb(211, 1, 1), black);
 }
 .overflow {
   overflow: hidden;
