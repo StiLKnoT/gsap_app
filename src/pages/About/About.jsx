@@ -25,9 +25,9 @@ const About = () => {
         <Transition timeline={about}/>
       <div className="about-image about-overlay" ref={aboutimg}></div>
       
-      <div className="pick__container">
+      {/* <div className="pick__container">
         <div class="pic__anima"></div>
-      </div>
+      </div> */}
 
       <div className="container-about" ref={abouth1}>
         <h1>About Page</h1>

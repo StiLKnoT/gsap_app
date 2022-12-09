@@ -33,7 +33,7 @@ const Contact = () => {
       <div className="container-contact" ref={contacth1}>
         <h1>Contact Page</h1>
       </div>
-      <Form ref={form}/>
+      {/* <Form ref={form}/> */}
     </div>    
   );
 };
